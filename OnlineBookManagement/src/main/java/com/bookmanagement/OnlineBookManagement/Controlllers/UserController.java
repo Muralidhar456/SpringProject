@@ -28,4 +28,9 @@ public class UserController {
     service.createUser(user);
     return "User Created " + user.getAccountName();
   }
+
+  @GetMapping
+  public String sayHello(){
+    return "hello world";
+  }
 }
